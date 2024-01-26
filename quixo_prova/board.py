@@ -32,6 +32,7 @@ class Board():
         return acceptable_slides
     
 
+    # Questa versione è corretta
     def get_legal_actions(self, player_id):
         from_all_possible_pos = list(itertools.product(list(range(5)), repeat=2))
         possible_moves = []

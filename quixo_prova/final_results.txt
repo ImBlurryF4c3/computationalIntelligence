@@ -1,0 +1,221 @@
+TEST ON NORMAL MCTS AGAINST RANDOM PLAYER
+
+Configuration #1:
+Duration -> 0.1
+C param -> 0.1
+Total games -> 100
+Victory Percentage: 75.0%
+
+Configuration #2:
+Duration -> 0.1
+C param -> 0.5
+Total games -> 100
+Victory Percentage: 80.0%
+
+Configuration #3:
+Duration -> 0.5
+C param -> 0.1
+Total games -> 100
+Victory Percentage: 98.0%
+
+Configuration #4:
+Duration -> 0.5
+C param -> 0.5
+Total games -> 100
+Victory Percentage: 96.0%
+
+Configuration #5:
+Duration -> 1
+C param -> 0.1
+Total games -> 100
+Victory Percentage: 98.0%
+
+Configuration #6:
+Duration -> 1
+C param -> 0.5
+Total games -> 100
+Victory Percentage: 98.0%
+
+
+TUNING HYPERPARAMETER OF PNS-MCTS THROUGH MATCHES AGAINST THE BEST PERFORMING MCTSFor this part we freeze the value of C for the standard versione of MCTS, C = 0.1. We instead change the c value
+and the pn value of the PNS-MCTS in order to find out the best ones.
+NOTE: the duration is the same for both MCTS and PNS-MCTS when they play against each other
+
+PNS-Configuration #1:
+Duration -> 0.1
+C param -> 0.1
+PN param -> 0.1
+Total games -> 100
+Victory Percentage: 57.0%
+
+PNS-Configuration #2:
+Duration -> 0.1
+C param -> 0.1
+PN param -> 0.5
+Total games -> 100
+Victory Percentage: 64.0%
+
+PNS-Configuration #3:
+Duration -> 0.1
+C param -> 0.1
+PN param -> 1
+Total games -> 100
+Victory Percentage: 60.0%
+
+PNS-Configuration #4:
+Duration -> 0.1
+C param -> 0.1
+PN param -> 2
+Total games -> 100
+Victory Percentage: 54.0%
+
+PNS-Configuration #5:
+Duration -> 0.1
+C param -> 0.5
+PN param -> 0.1
+Total games -> 100
+Victory Percentage: 49.0%
+
+PNS-Configuration #6:
+Duration -> 0.1
+C param -> 0.5
+PN param -> 0.5
+Total games -> 100
+Victory Percentage: 57.0%
+
+PNS-Configuration #7:
+Duration -> 0.1
+C param -> 0.5
+PN param -> 1
+Total games -> 100
+Victory Percentage: 61.0%
+
+PNS-Configuration #8:
+Duration -> 0.1
+C param -> 0.5
+PN param -> 2
+Total games -> 100
+Victory Percentage: 61.0%
+
+PNS-Configuration #9:
+Duration -> 0.5
+C param -> 0.1
+PN param -> 0.1
+Total games -> 100
+Victory Percentage: 65.0%
+
+PNS-Configuration #10:
+Duration -> 0.5
+C param -> 0.1
+PN param -> 0.5
+Total games -> 100
+Victory Percentage: 65.0%
+
+PNS-Configuration #11:
+Duration -> 0.5
+C param -> 0.1
+PN param -> 1
+Total games -> 100
+Victory Percentage: 54.0%
+
+PNS-Configuration #12:
+Duration -> 0.5
+C param -> 0.1
+PN param -> 2
+Total games -> 100
+Victory Percentage: 63.0%
+
+PNS-Configuration #13:
+Duration -> 0.5
+C param -> 0.5
+PN param -> 0.1
+Total games -> 100
+Victory Percentage: 56.0%
+
+PNS-Configuration #14:
+Duration -> 0.5
+C param -> 0.5
+PN param -> 0.5
+Total games -> 100
+Victory Percentage: 47.0%
+
+PNS-Configuration #15:
+Duration -> 0.5
+C param -> 0.5
+PN param -> 1
+Total games -> 100
+Victory Percentage: 67.0%
+
+PNS-Configuration #16:
+Duration -> 0.5
+C param -> 0.5
+PN param -> 2
+Total games -> 100
+Victory Percentage: 54.0%
+
+PNS-Configuration #17:
+Duration -> 1
+C param -> 0.1
+PN param -> 0.1
+Total games -> 100
+Victory Percentage: 56.0%
+
+PNS-Configuration #18:
+Duration -> 1
+C param -> 0.1
+PN param -> 0.5
+Total games -> 100
+Victory Percentage: 49.0%
+
+PNS-Configuration #19:
+Duration -> 1
+C param -> 0.1
+PN param -> 1
+Total games -> 100
+Victory Percentage: 55.0%
+
+PNS-Configuration #20:
+Duration -> 1
+C param -> 0.1
+PN param -> 2
+Total games -> 100
+Victory Percentage: 65.0%
+
+PNS-Configuration #21:
+Duration -> 1
+C param -> 0.5
+PN param -> 0.1
+Total games -> 100
+Victory Percentage: 59.0%
+
+PNS-Configuration #22:
+Duration -> 1
+C param -> 0.5
+PN param -> 0.5
+Total games -> 100
+Victory Percentage: 55.0%
+
+PNS-Configuration #23:
+Duration -> 1
+C param -> 0.5
+PN param -> 1
+Total games -> 100
+Victory Percentage: 56.0%
+
+PNS-Configuration #24:
+Duration -> 1
+C param -> 0.5
+PN param -> 2
+Total games -> 100
+Victory Percentage: 62.0%
+
+
+SEARCHING FOR A MORE ACCURATE VALUE OF THE VICTORY PERCENTAGE FOR THE MOST PROMISING CONFIGURATIONS10 iterations of 100 games in order to take the average of the victory percentage
+Configuration for MCTS -> c_param = 0.1
+Configuration for PN-MCTS -> Configuration #15 and #20 (look above)
+
+PNS-Configuration #15:
+Duration -> 0.5
+C param -> 0.5
+PN param -> 1
+Victory Percentage: 58.70

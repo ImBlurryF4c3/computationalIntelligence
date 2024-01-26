@@ -4,8 +4,6 @@ from enum import Enum
 import numpy as np
 
 # Rules on PDF
-
-
 class Move(Enum):
     '''
     Selects where you want to place the taken piece. The rest of the pieces are shifted
@@ -95,8 +93,6 @@ class Game(object):
             while not ok:
                 from_pos, slide = players[self.current_player_idx].make_move(self)
                 ok = self.__move(from_pos, slide, self.current_player_idx)
-            print(f'Player {self.current_player_idx} applica mossa --> {from_pos, slide}')
-            self.print()
             winner = self.check_winner()
         return winner
 

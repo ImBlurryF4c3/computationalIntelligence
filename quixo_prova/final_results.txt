@@ -219,3 +219,15 @@ Duration -> 0.5
 C param -> 0.5
 PN param -> 1
 Victory Percentage: 58.70
+
+PNS-Configuration #20:
+Duration -> 1
+C param -> 0.1
+PN param -> 2
+Victory Percentage: 59.10
+
+PNS-Configuration:
+Duration -> 1
+C param -> 0.1
+PN param -> 2
+Victory Percentage VS random player: 99.50

@@ -43,6 +43,6 @@ GENERATION 999: best_fitness ---> 93.0
 
 
 if __name__ == "__main__":
-    #es_mu_plus_lambda(LAMBDA, MU, RULES, 1000, 100)
+    #es_mu_plus_lambda(LAMBDA, MU, RULES, 1000, 300)
     opponent_strat = optimal
-    test(w2, opponent_strat, 10000, RULES)
+    test(w2, opponent_strat, 1000, RULES)
